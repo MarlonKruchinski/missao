@@ -1,22 +1,24 @@
-onst caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultdo = document.querySelector(".texto-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-    enunciado: "Qual é uma prática benéfica para promover o bem-estar físico e mental tanto em humanos quanto em animais de estimação?",
-    alternativas: [
-       {
-        texto:"Passeios diários ao ar livre",
-        afirmacao:"O exercício regular é crucial para manter a saúde cardiovascular e a agilidade física em humanos e animais"
+        enunciado:"Como você acha que as escolas poderiam integrar melhor o cuidado com os animais ao currículo, promovendo tanto a educação quanto o envolvimento em esportes?",
+        alternativas: [
+            {
+        texto:"Incluir atividades esportivas que envolvam cuidados com animais, como equitação ou corrida com cães.",
+        afirmacao:"A integração de esportes que envolvem animais pode proporcionar aos alunos experiências práticas de responsabilidade e cuidado."
     },
-   {
-    texto:"Assistir televisão juntos",
-    afirmacao:"Interagir e brincar com animais de estimação pode reduzir os níveis de estresse e promover uma sensação de calma e felicidade tanto para as pessoas quanto para os animais"
-  }
-    ]
+    {
+        texto:"Incentivar os alunos a aprender mais sobre os ambientes naturais e suas diferentes espécies de animais.",
+       afirmacao:"Projetos educativos sobre animais podem esstimular o interesse dos alunos pela biologia e conservação, complementando seu aprendizado acadễmico."
+          
+    },
+   
+]
 }
 ];
 
@@ -57,4 +59,4 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Em 2030...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-}    
+}
